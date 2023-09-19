@@ -1,4 +1,5 @@
 class Api::V1::RestaurantsController < Api::V1::BaseController
+  acts_as_token_authentication_handler_for User, except: [ :index, :show ]
   before_action :set_restaurant, only: [:show, :update]
 
   def index
@@ -8,7 +9,7 @@ class Api::V1::RestaurantsController < Api::V1::BaseController
   def show
   end
 
-  def updated
+  def update
     if @restaurant.update(restaurant_params)
       render :show
     else
