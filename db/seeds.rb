@@ -16,11 +16,10 @@ p "destroying all the Users"
 User.destroy_all
 
 p "creating fake user"
-10.times do
+10.times do |i|
   name = Faker::Name.unique.name # This will return a unique name every time it is called
-  p name
-  # User.create()
+  User.create!(username: name, password: "123456", email: "#{name.split.last}#{i}@gmail.com")
+  p "create user #{name}"
 end
-
 
 p "~~~~DONE!~~~~~~"
