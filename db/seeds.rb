@@ -6,10 +6,21 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+p "destroying all the Commentz"
+Comment.destroy_all
 
-p "deleting all the User"
+p "destroying all the Restaurants"
+Restaurant.destroy_all
 
+p "destroying all the Users"
 User.destroy_all
+
+p "creating fake user"
+10.times do
+  name = Faker::Name.unique.name # This will return a unique name every time it is called
+  p name
+  # User.create()
+end
 
 
 p "~~~~DONE!~~~~~~"
