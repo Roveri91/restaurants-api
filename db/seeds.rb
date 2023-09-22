@@ -49,7 +49,7 @@ p "El Pancho"
     user = User.all.sample
   end
   Comment.create(content: content, user: user, restaurant: restaurant)
-  p "create comment by #{user} on #{restaurant.name}"
+  p "create comment by #{user.username} on #{restaurant.name}"
 end
 
 
