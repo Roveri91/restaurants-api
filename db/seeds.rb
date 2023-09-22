@@ -38,9 +38,9 @@ Restaurant.create(name: "Shichirin Minoh Onohara", address: "5 Chome-8-3 Onohara
 p "create Shichirin"
 
 Restaurant.create(name: "El Pancho", address: "1 Chome-10-1 心斎橋タワービル 8F", category: "Mexican", rating: 4.3, phone_number: "06-6241-0588", user: User.all.sample)
-p "El Pancho"
+p "create El Pancho"
 
-12.times do
+20.times do
   content = Faker::Restaurant.review
   user = User.all.sample
   restaurant = Restaurant.all.sample
