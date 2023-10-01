@@ -35,7 +35,7 @@ rails s
 ---
 User: are created randmoly so check the DB
 
-PW: is "123456" for all users 
+PW: "123456" for all users 
 
 🔨 Built With
 ---
