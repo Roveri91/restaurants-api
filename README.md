@@ -33,7 +33,7 @@ rails s
 
 📕 Usage
 ---
-User: are created randmoly so check the DB
+User: are created randomly so check the DB
 
 PW: "123456" for all users 
 
